@@ -194,49 +194,35 @@
             <form id="excavationData" role="form">
 
                 <div class="form-group">
-                    <label class="control-label" for="seasonNumber">Season number: </label>
-                    <input type="text" name="seasonNumber" id="seasonNumber" class="form-control fields"
-                           placeholder="The season number looks like Nubian Survey 1961">
+                    <label class="control-label" for="excavatorName">Finder's or excavator's name: </label>
+                    <input type="text" name="excavatorName" id="excavatorName" class="form-control fields"
+                           placeholder="This is usually an Arabic name in English form">
                 </div>
 
+                <div class="form-group">
+                    <label class="control-label" for="discoveryDate">Date of discovery: </label>
+                    <input type="text" name="discoveryDate" id="discoveryDate" class="form-control fields"
+                           placeholder="This may not be present, and is above the description on free text forms">
+                </div>
 
                 <div class="form-group">
                     <label class="control-label" for="cardNumber">Card number: </label>
                     <input type="text" name="cardNumber" id="cardNumber" class="form-control fields"
-                           placeholder="The card number is top right and may look like 229-1-8">
+                           placeholder="The card number is top right and may look like Z15a">
                 </div>
 
                 <div class="form-group">
                     <label class="control-label" for="description">Description of object: </label>
                     <textarea rows="2" name="description" id="description" class="form-control fields"
-                           placeholder="The description is just above the drawing" rel="tooltip" data-toggle="tooltip"
-                           data-placement="bottom" title="The description is just above the drawing (if there is one). There might be more description below the object drawing"></textarea>
-                </div>
-
-
-                <div class="form-group">
-                    <label class="control-label" for="scale">Scale of object/drawing: </label>
-                    <input type="text" name="scale" id="scale" class="form-control fields"
-                           placeholder="Look for scale below the drawing">
-                </div>
-
-                 <div class="form-group">
-                    <label class="control-label" for="provenance">Provenance: </label>
-                    <textarea rows="2" name="provenance" id="provenance" class="form-control fields"
-                           placeholder="The provenance is usually below the drawing" rel="tooltip" data-toggle="tooltip"></textarea>
-                </div>
-
-                 <div class="form-group">
-                    <label class="control-label" for="timePeriod">Time period: </label>
-                    <input type="text" name="timePeriod" id="timePeriod" class="form-control fields"
-                           placeholder="Period may look like Byz Christian">
+                           placeholder="The description may contain drawings, just transcribe the text" rel="tooltip" data-toggle="tooltip"
+                           data-placement="bottom" title="The description may contain drawings, just transcribe the text."></textarea>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="redNumber">Red number: </label>
-                    <input type="text" name="redNumber" id="redNumber" class="form-control fields"
-                           placeholder="Number bottom left in red crayon">
+                  <label class="control-label" for="reverseCard">Is this card a reverse? </label>
+                    <input class="form-control fields" name="reverseCard" id="reverseCard" type="checkbox" value="reverseCard">
                 </div>
+
                 <hr/>
 
                 <div class="form-group">
@@ -274,50 +260,66 @@
     <div class="modal-dialog">
         <div class="modal-content">
 
-            <div class="modal-header">
-                <h3 class="lead">Egypt Exploration Society Nubian Sondage Season 1960 - 1961</h3>
+             <div class="modal-header">
+                <h3 class="lead">Egypt Exploration Society Abydos Tomb cards: Cemetery Z</h3>
             </div>
 
             <div id="0" class="modal-body" style="display:none">
                 <img src="http://www.ees.ac.uk/images/logo.gif" class="pull-right img-circle"/>
                 <p>
                     This project is an application for the crowd-sourcing of data from archival cards that
-                    have been generated from the Egypt Exploration Society's Nubian Sondage digging season 1960 - 1961. Each card
-                    contains very structured data relating to each object recorded, and these data are what we would
-                    like you to transcribe.
+                    have been generated from the Egypt Exploration Society's excavations at Abydos (Tomb cards cemetery
+                    Z).
+                    Each card contains structured data relating to each tomb recorded, and these data are what we would
+                    like you to transcribe. However, there is a degree of variance between the cards and some may be the
+                    reverse of an existing record. The hand writing on these cards may also prove to be quite
+                    challenging.
                 </p>
 
+                <p>
+                    Cards have various guises. Over the next few pages of this tutorial are some examples.
+                </p>
             </div>
 
             <div id="1" class="modal-body" style="display:none">
-
-                <p>
-                    Therefore the field list we would like is as follows:
-                </p>
-
-                <ol>
-                    <li>Season number</li>
-                    <li>Record number</li>
-                    <li>Scale of image</li>
-                    <li>Provenance</li>
-                    <li>Time period</li>
-                    <li>Red number</li>
-                    <li>Your comments or other information</li>
-                </ol>
-
-                <p>
-                    In the provenance field, you will often see the word 'Redim'. The word "redime" is a (somewhat
-                    mis-spelled) word for "fill" in Arabic, and was a term used by Emery on his excavations.
-                    To be precise, the verb is "radama" (to fill with earth). So best to transcribe as "redime" for now!
-                </p>
-
+                <h2>Complex record card</h2>
+                <img src="https://micropasts-other.s3.amazonaws.com/other/eesAbydos/complexFront.jpg" width="524"
+                     height="640">
             </div>
 
             <div id="2" class="modal-body" style="display:none">
+                <h2>A card's reverse</h2>
+                <img src="https://micropasts-other.s3.amazonaws.com/other/eesAbydos/reverseCard.jpg" width="524"
+                     height="640">
+
+            </div>
+
+            <div id="3" class="modal-body" style="display:none">
+                <h2>A simple card front</h2>
+                <img src="https://micropasts-other.s3.amazonaws.com/other/eesAbydos/nonStandard.jpg" width="524"
+                     height="640">
+
+            </div>
+
+            <div id="4" class="modal-body" style="display:none">
+
+                <p>
+                    Therefore there are a variety of fields that could be completed:
+                </p>
+
+                <ol>
+                    <li>Excavator's or finder's name</li>
+                    <li>Date of discovery</li>
+                    <li>Record number</li>
+                    <li>Descriptive data</li>
+                    <li>Whether the card maybe a reverse</li>
+                </ol>
+            </div>
+
+            <div id="5" class="modal-body" style="display:none">
                 <p>
                     Finally, you may have comments on the index card, if you do, please fill in the final box and then
-                    submit
-                    your contribution. Thank you for taking part.
+                    submit your contribution. Thank you for taking part.
                 </p>
             </div>
 
@@ -358,7 +360,7 @@
             $("#prevBtn").show();
         }
 
-        if (step == 2 ) {
+        if (step == 5 ) {
             $("#nextBtn").hide();
             $("#startContrib").show();
         }
@@ -443,13 +445,11 @@ Modernizr.load({
                 if (typeof answer != 'undefined') {
                     task.answer = $("#excavationData").serializeJSON();
                     task.answer.description = $('#description').val();
-                    task.answer.seasonNumber = $('#seasonNumber').val();
+                    task.answer.excavatorName = $('#excavatorName').val();
                     task.answer.cardNumber = $('#cardNumber').val();
-                    task.answer.timePeriod = $('#timePeriod').val();
-                    task.answer.provenance = $('#provenance').val();
-                    task.answer.scale = $('#scale').val();
-                    task.answer.redNumber = $('#redNumber').val();
                     task.answer.comments = $('#comments').val();
+                    task.answer.reverseCard = $('#reverseCard').val();
+                    task.answer.discoveryDate = $('#discoveryDate').val();
                     console.log(task.answer);
                     pybossa.saveTask(task.id, task.answer).done(function() {
                         $("html, body").animate({ scrollTop: 0 }, "slow");
@@ -458,7 +458,7 @@ Modernizr.load({
 
                         // The line below resets the form when next loading a task
                         $('.fields').val('');
-
+                        $('input:checkbox').removeAttr('checked');
                         deferred.resolve();
                     });
                 } else {

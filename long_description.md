@@ -1,16 +1,14 @@
-This application enables the transcription of archive cards from the Egypt Exploration Society (EES) Nubian Sondage survey
-between 1960 - 1961. Images will be drawn from the EES Flickr feed and redisplayed in the browser window. The EES would 
+This application enables the transcription of archive cards from the Egypt Exploration Society (EES) Abydos Tomb cards Cemetery Z 
+archive. Images will be drawn from the EES Flickr feed and redisplayed in the browser window. The EES would 
 like the following information to be transcribed for them to create a searchable archive for their records. 
 
 These fields are:
 
-* Season date
+* Excavator's or finder's name
+* Date of discovery
 * Record number
-* Description
-* Provenance
-* Time period (if given)
-* Scale of image
-* Your comments or other information
+* Descriptive data
+* Whether the card maybe a reverse
 
 The object cards have been scanned by EES volunteers.
 
@@ -23,4 +21,4 @@ This application is on behalf of the Egypt Exploration Society.
 ## Find the code on GitHub
 
 [![](https://micropasts-other.s3.amazonaws.com/other/github_logo.png)]
-(https://github.com/MicroPasts/nubianSondage)
+(https://github.com/MicroPasts/abydosTombZ)
