@@ -1,0 +1,107 @@
+<div id="modal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h3 class="lead">Egypt Exploration Society Abydos Tomb cards: Cemetery Z</h3>
+            </div>
+
+            <div id="0" class="modal-body" style="display:none">
+                <img src="http://www.ees.ac.uk/images/logo.gif" class="pull-right img-circle"/>
+                <p>
+                    This project is an application for the crowd-sourcing of data from archival cards that
+                    have been generated from the Egypt Exploration Society's excavations at Abydos (Tomb cards cemetery
+                    Z).
+                    Each card contains structured data relating to each tomb recorded, and these data are what we would
+                    like you to transcribe. However, there is a degree of variance between the cards and some may be the
+                    reverse of an existing record. The hand writing on these cards may also prove to be quite
+                    challenging.
+                </p>
+
+                <p>
+                    Cards have various guises. Over the next few pages of this tutorial are some examples.
+                </p>
+            </div>
+
+            <div id="1" class="modal-body" style="display:none">
+                <h2>Complex record card</h2>
+                <img src="https://micropasts-other.s3.amazonaws.com/other/eesAbydos/complexFront.jpg" width="524"
+                     height="640">
+            </div>
+
+            <div id="2" class="modal-body" style="display:none">
+                <h2>A card's reverse</h2>
+                <img src="https://micropasts-other.s3.amazonaws.com/other/eesAbydos/reverseCard.jpg" width="524"
+                     height="640">
+
+            </div>
+
+            <div id="3" class="modal-body" style="display:none">
+                <h2>A simple card front</h2>
+                <img src="https://micropasts-other.s3.amazonaws.com/other/eesAbydos/nonStandard.jpg" width="524"
+                     height="640">
+
+            </div>
+
+            <div id="4" class="modal-body" style="display:none">
+
+                <p>
+                    Therefore there are a variety of fields that could be completed:
+                </p>
+
+                <ol>
+                    <li>Excavator's or finder's name</li>
+                    <li>Date of discovery</li>
+                    <li>Record number</li>
+                    <li>Descriptive data</li>
+                    <li>Whether the card maybe a reverse</li>
+                </ol>
+            </div>
+
+            <div id="5" class="modal-body" style="display:none">
+                <p>
+                    Finally, you may have comments on the index card, if you do, please fill in the final box and then
+                    submit
+                    your contribution. Thank you for taking part.
+                </p>
+            </div>
+
+            <div class="modal-footer">
+                <a id="prevBtn" href="#" onclick="showStep('prev')" class="btn btn-default">Previous</a>
+                <a id="nextBtn" href="#" onclick="showStep('next')" class="btn btn-success">Next</a>
+                <a id="startContrib" data-dismiss="modal" class="btn btn-primary" style="display:none"><i
+                        class="glyphicon glyphicon-thumbs-up"></i> Let's start!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    var step = -1;
+    function showStep(action) {
+        $("#" + step).hide();
+        if (action == 'next') {
+            step = step + 1;
+        }
+        if (action == 'prev') {
+            step = step - 1;
+        }
+        if (step == 0) {
+            $("#prevBtn").hide();
+        }
+        else {
+            $("#prevBtn").show();
+        }
+
+        if (step == 5 ) {
+            $("#nextBtn").hide();
+            $("#startContrib").show();
+        }
+        $("#" + step).show();
+    }
+
+    showStep('next');
+    $("#modal").modal('show');
+
+</script>
