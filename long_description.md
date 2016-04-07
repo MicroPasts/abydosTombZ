@@ -1,5 +1,5 @@
-This application enables the transcription of archive cards from the Egypt Exploration Society (EES) Abydos Tomb cards Cemetery Z 
-archive. Images will be drawn from the EES Flickr feed and redisplayed in the browser window. The EES would 
+This application enables the transcription of archive cards from the Egypt Exploration Society (EES) Abydos Tomb cards 
+Cemetery Z archive. Images will be drawn from the EES Flickr feed and redisplayed in the browser window. The EES would 
 like the following information to be transcribed for them to create a searchable archive for their records. 
 
 These fields are:
