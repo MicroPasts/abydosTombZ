@@ -18,7 +18,7 @@ This application is on behalf of the Egypt Exploration Society.
 
 [![EES logo](http://www.ees.ac.uk/images/logo.gif)](http://www.ees.ac.uk)
 
-## Find the code on GitHub
+## Find the code on GitHub:
 
 [![](https://micropasts-other.s3.amazonaws.com/other/github_logo.png)]
 (https://github.com/MicroPasts/abydosTombZ)
